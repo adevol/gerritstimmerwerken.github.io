@@ -13,40 +13,40 @@ function App() {
 
   const projectPhotos = [
     {
-      city: 'Reuver',
-      service: 'Onderhoud & timmerwerk',
-      description: 'Complete onderhoudsbeurt met nieuw timmerwerk voor een vrijstaande woning.',
+      city: 'Den Bosch',
+      service: 'Houten gevelafwerking',
+      description: 'Warme houten gevels geplaatst die de moderne nieuwbouw extra karakter geven.',
       image: '/img1.jpg',
     },
     {
-      city: 'Geleen',
-      service: 'Renovatie & afbouw',
-      description: 'Binnenrenovatie inclusief strakke afbouw en maatwerk kasten.',
-      image: '/img5.jpg',
+      city: 'Reuver',
+      service: 'Nieuwbouwproject',
+      description: 'Complete nieuwbouwwoning gebouwd, van fundering tot afbouw.',
+      image: '/img2.jpg',
+    },
+    {
+      city: 'Hoeven',
+      service: 'Gevelbekleding',
+      description: 'Strakke gevelbekleding aangebracht voor een frisse en duurzame uitstraling.',
+      image: '/img3.jpg',
+    },
+    {
+      city: 'Valkenburg',
+      service: 'Schoolbouw',
+      description: 'Volledige school nieuw neergezet, inclusief dakwerk en interieur.',
+      image: '/img4.jpg',
     },
     {
       city: 'Geldrop',
-      service: 'Restauratieproject',
-      description: 'Herstel van karakteristieke details en nieuwe kozijnen.',
-      image: '/img9.jpg',
+      service: 'Appartementsbouw in kerk',
+      description: 'Kerk omgebouwd tot stijlvolle appartementen met oog voor details.',
+      image: '/img5.jpg',
     },
     {
-      city: 'Den Bosch',
-      service: 'Dakwerk & fundering',
-      description: 'Nieuw dak, geïsoleerd en gekoppeld aan funderingsversterking.',
-      image: '/img12.jpg',
-    },
-    {
-      city: 'Breda',
-      service: 'Renovatie + timmerwerk',
-      description: 'Landelijke afwerking met maatwerk interieurstukken.',
-      image: '/img15.jpg',
-    },
-    {
-      city: 'Reuver',
-      service: 'Restauratie op maat',
-      description: 'Authentieke houten details teruggebracht in oude hoeve.',
-      image: '/img18.jpg',
+      city: 'Bergeijk',
+      service: 'Vakantiehuis renovatie',
+      description: 'Vakantiehuis verbouwd inclusief zwembad en luxe afwerking.',
+      image: '/img6.jpg',
     },
   ];
 
@@ -237,9 +237,9 @@ function App() {
                     <Mail className="w-6 h-6 text-amber-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-stone-800 mb-1">Website</h3>
-                    <a href="https://gerritstimmerwerken.be" target="_blank" rel="noopener noreferrer" className="text-amber-600 font-medium hover:underline">gerritstimmerwerken.be</a>
-                    <p className="text-sm text-stone-500 mt-1">Meer info hier</p>
+                    <h3 className="font-semibold text-stone-800 mb-1">E-mail</h3>
+                    <a href="mailto:gerritstimmerwerken1@gmail.com" className="text-amber-600 font-medium hover:underline">gerritstimmerwerken1@gmail.com</a>
+                    <p className="text-sm text-stone-500 mt-1">Stuur gerust foto's of plannen mee</p>
                   </div>
                 </div>
 
