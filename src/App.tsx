@@ -34,19 +34,19 @@ function App() {
       city: 'Valkenburg',
       service: 'Schoolbouw',
       description: 'Volledige school nieuw neergezet, inclusief dakwerk en interieur.',
-      image: '/img4.jpg',
+      image: '/img11.jpg',
     },
     {
       city: 'Geldrop',
       service: 'Appartementsbouw in kerk',
       description: 'Kerk omgebouwd tot stijlvolle appartementen met oog voor details.',
-      image: '/img5.jpg',
+      image: '/img15.jpg',
     },
     {
       city: 'Bergeijk',
       service: 'Vakantiehuis renovatie',
       description: 'Vakantiehuis verbouwd inclusief zwembad en luxe afwerking.',
-      image: '/img6.jpg',
+      image: '/img18.jpg',
     },
   ];
 
