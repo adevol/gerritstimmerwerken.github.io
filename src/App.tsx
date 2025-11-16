@@ -1,6 +1,55 @@
-import { Hammer, Home, Wrench, HardHat, Phone, Mail, ArrowRight } from 'lucide-react';
+import { Hammer, Home, Wrench, HardHat, Phone, Mail, ArrowRight, CheckCircle } from 'lucide-react';
 
 function App() {
+  const keyServices = [
+    'Onderhoud van woningen en bedrijfspanden',
+    'Renovatie van keukens, badkamers en leefruimtes',
+    'Restauratie van karaktervolle panden',
+    'Timmerwerk op maat, binnen en buiten',
+    'Dakwerk: reparatie, isolatie en vernieuwing',
+    'Funderingsherstel en versterking',
+    'Afbouw: van plinten tot plafonds',
+  ];
+
+  const projectPhotos = [
+    {
+      city: 'Reuver',
+      service: 'Onderhoud & timmerwerk',
+      description: 'Complete onderhoudsbeurt met nieuw timmerwerk voor een vrijstaande woning.',
+      image: '/img1.jpg',
+    },
+    {
+      city: 'Geleen',
+      service: 'Renovatie & afbouw',
+      description: 'Binnenrenovatie inclusief strakke afbouw en maatwerk kasten.',
+      image: '/img5.jpg',
+    },
+    {
+      city: 'Geldrop',
+      service: 'Restauratieproject',
+      description: 'Herstel van karakteristieke details en nieuwe kozijnen.',
+      image: '/img9.jpg',
+    },
+    {
+      city: 'Den Bosch',
+      service: 'Dakwerk & fundering',
+      description: 'Nieuw dak, geïsoleerd en gekoppeld aan funderingsversterking.',
+      image: '/img12.jpg',
+    },
+    {
+      city: 'Breda',
+      service: 'Renovatie + timmerwerk',
+      description: 'Landelijke afwerking met maatwerk interieurstukken.',
+      image: '/img15.jpg',
+    },
+    {
+      city: 'Reuver',
+      service: 'Restauratie op maat',
+      description: 'Authentieke houten details teruggebracht in oude hoeve.',
+      image: '/img18.jpg',
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-stone-50">
       <header className="bg-amber-600 text-white py-6 px-4 shadow-lg sticky top-0 z-50">
@@ -96,35 +145,16 @@ function App() {
 
           <div className="mt-12 bg-white rounded-2xl shadow-lg p-8 border-l-8 border-amber-500">
             <h3 className="text-2xl font-bold text-stone-800 mb-4">Overige werkzaamheden:</h3>
+            <p className="text-stone-600 mb-6">
+              Onderhoud, renovatie, restauratie, timmerwerk, dakwerk, fundering en afbouw: we pakken het allemaal aan met hetzelfde vakmanschap.
+            </p>
             <div className="grid md:grid-cols-2 gap-4 text-stone-700">
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-600 mt-1">•</span>
-                  <span>Timmerwerk van A tot Z</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-600 mt-1">•</span>
-                  <span>Verbouwingen & renovaties</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-600 mt-1">•</span>
-                  <span>Reparaties & onderhoud</span>
-                </li>
-              </ul>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-600 mt-1">•</span>
-                  <span>Gevelbekleding</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-600 mt-1">•</span>
-                  <span>Isolatiewerkzaamheden</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-amber-600 mt-1">•</span>
-                  <span>Aanbouwen & uitbreidingen</span>
-                </li>
-              </ul>
+              {keyServices.map((service) => (
+                <div key={service} className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-amber-600 mt-1" aria-hidden="true" />
+                  <span>{service}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -151,6 +181,30 @@ function App() {
                 <p className="text-sm text-amber-100 mt-2">Duidelijke communicatie, eerlijke prijzen</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-stone-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-stone-800 mb-4">Recente projecten</h2>
+            <p className="text-xl text-stone-600">
+              Van Reuver tot Breda: een greep uit ons onderhoud, renovatie, restauratie- en dakwerk.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {projectPhotos.map((project) => (
+              <article key={`${project.city}-${project.service}`} className="bg-white rounded-2xl shadow-lg overflow-hidden border border-stone-100">
+                <img src={project.image} alt={`${project.service} in ${project.city}`} className="h-56 w-full object-cover" />
+                <div className="p-6 space-y-2">
+                  <p className="text-sm uppercase tracking-wide text-amber-600">{project.city}</p>
+                  <h3 className="text-2xl font-bold text-stone-800">{project.service}</h3>
+                  <p className="text-stone-600">{project.description}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -206,19 +260,19 @@ function App() {
                 <ul className="space-y-2 text-stone-600">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
-                    Limburg (NL & BE)
+                    Reuver & Geleen (Limburg)
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
-                    Noord-Brabant
+                    Geldrop en omgeving
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
-                    Zuid-Holland
+                    Den Bosch
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
-                    Gelderland
+                    Breda en de rest van Noord-Brabant
                   </li>
                 </ul>
                 <p className="text-sm text-stone-600 mt-6 italic">
@@ -273,3 +327,5 @@ function ServiceCard({ icon, title, description, color }: ServiceCardProps) {
 }
 
 export default App;
+
+
