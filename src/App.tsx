@@ -13,28 +13,28 @@ function App() {
 
   const projectPhotos = [
     {
-      city: 'Den Bosch',
-      service: 'Houten gevelafwerking',
-      description: 'Warme houten gevels geplaatst die de moderne nieuwbouw extra karakter geven.',
-      image: '/img1.jpg',
+      city: 'Kesteren',
+      service: 'Nieuwbouwproject',
+      description: 'Het bouwen van een molen, inclusief draaiende wieken.',
+      image: '/img24.jpg',
     },
     {
       city: 'Reuver',
       service: 'Nieuwbouwproject',
       description: 'Complete nieuwbouwwoning gebouwd, van fundering tot afbouw.',
-      image: '/img2.jpg',
+      image: '/img5.jpg',
     },
     {
       city: 'Hoeven',
       service: 'Gevelbekleding',
       description: 'Strakke gevelbekleding aangebracht voor een frisse en duurzame uitstraling.',
-      image: '/img3.jpg',
+      image: '/img9.jpg',
     },
     {
       city: 'Valkenburg',
       service: 'Schoolbouw',
       description: 'Volledige school nieuw neergezet, inclusief dakwerk en interieur.',
-      image: '/img11.jpg',
+      image: '/img13.jpg',
     },
     {
       city: 'Geldrop',
